@@ -1,0 +1,47 @@
+body {
+    background-image: url(../img/wa6_folsom.jpg);
+}
+
+#header {
+    position: fixed;
+    background-color: black;
+    width: 350px;
+    height: 75px;
+    top: 30px;
+    left: 30px;
+    text-align: center;
+    color: white;
+}
+
+#CUScore {
+    position: fixed;
+    background-color: goldenrod;
+    width: 175px;
+    height: 75px;
+    top: 105px;
+    left: 30px;
+    text-align:center;
+    color: black;
+}
+
+#SyracuseScore {
+    position: fixed;
+    background-color: orange;
+    width: 175px;
+    height: 75px;
+    top: 105px;
+    left: 205px;
+    text-align:center;
+    color: black; 
+}
+
+#network {
+    position: fixed;
+    background-color:white;
+    width: 350px;
+    height: 75px;
+    bottom: 30px;
+    right: 30px;
+    text-align:center;
+    color: goldenrod;
+}
