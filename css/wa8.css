@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightsalmon;
+}
+nav{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:20px;
+    background-color: orangered;
+}
+nav a{
+    width:10vw;
+    text-align: center;
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:black;
+}
+img{
+    width:60vw;
+    height:60vh;
+    object-fit: contain;
+}
+nav:hover{
+  background-color: whitesmoke;  
+}
+#red-ball{
+    background-color: orangered;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    position: absolute;
+    left:5vw;
+    top:0;
+    animation-name: redBallMove;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes redBallMove {
+    from {
+        margin-left: 100%;
+        width:300%;
+    }
+    to {
+        margin-left:0%;
+        width: 10%;
+    }
+}
