@@ -126,8 +126,7 @@ nav a{
         }
         
         .collapsible:hover {
-            height: fit-content;
-            
+            height: fit-content;  
         }
         
         .padding-top {
@@ -169,5 +168,4 @@ nav a{
             color: whitesmoke;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
     }
