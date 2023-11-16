@@ -45,6 +45,9 @@ function changeBG() {
         }
         return color;
     }
-    // newBtn.style.backgroundColor = getRandomColor;
+
+    let color = getRandomColor();
+    newBtn.style.backgroundColor = color;
 }
 
+getQuote();
