@@ -72,7 +72,9 @@ raise();
 const wfh = ["Anna", "Sam"];
 for (let i =0; i < HR["employees"].length; i++) {
     if (wfh.includes(HR["employees"][i]["name"])) {
-        HR["employees"][i]["wfh"] = "WFH";
+        HR["employees"][i]["wfh"] = true;
+    } else {
+        HR["employees"][i]["wfh"] = false;
     }
 }
 console.log(HR["employees"]);
