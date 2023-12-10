@@ -29,6 +29,7 @@ class Ball {
         this.velY = velY;
         this.color = color;
         this.size = size;
+        //number
     }
 
     draw() {
@@ -37,6 +38,8 @@ class Ball {
         ctx.arc(this.x, this.y, this.size, 0, 2*Math.PI);
         ctx.fill();
     }
+
+    //
 
     update() {
         // this handles the right edge of the screen
@@ -89,12 +92,19 @@ while (balls.length < 25) {
         random(-7,7),
         randomRGB(),
         size,
+        //number = i
     );
+    //
     balls.push(ball);
 }
+
+//forloop
 // console.log(balls)
 
 function loop() {
+    document.querySelectorAll('.ball-overlay').forEach(element => {
+        element.remove();
+    });
     ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
     ctx.fillRect(0, 0, width, height);
     for (const ball of balls) {
