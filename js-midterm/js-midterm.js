@@ -182,8 +182,11 @@ let VelX = 0;
 let VelY = 0;
 let velX = [5, 8, -4, 2, 7, 2, 10, 15, 6, 12]
 let velY = [5, 8, -4, 2, 7, 2, 10, 15, 6, 12]
-//convert string to num (add num) and convert back to string
-parseInt[5, 8, -4, 2, 7, 2, 10, 15, 6, 12];
+//convert string to num, add num, and convert back to string
+const inputString = [5, 8, -4, 2, 7, 2, 10, 15, 6, 12];
+const inputNumber = parseInt(inputString);
+const addedNumber = inputNumber + random
+const resultString = addedNumber.toString();
 
 function loop() {
     //loop through overlays
