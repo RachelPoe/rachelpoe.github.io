@@ -1,12 +1,12 @@
 body{
     margin: 0;
     overflow: hidden;
-    background-color: darkgreen;
+    background-color: seagreen;
 }
 
 #title{
     text-align: center;
-    color: red;
+    color: whitesmoke;
 }
 
 .flexbox{
@@ -17,7 +17,7 @@ body{
 }
 
 .box1 {
-    background-color: #fff;
+    background-color: whitesmoke;
     width: 80px;
     height: 100px;
     color: black;
@@ -25,7 +25,7 @@ body{
 }
 
 .box2 {
-    background-color: #fff;
+    background-color: whitesmoke;
     width: 80px;
     height: 100px;
     color: black;
@@ -33,7 +33,7 @@ body{
 }
 
 .box3 {
-    background-color: #fff;
+    background-color: whitesmoke;
     width: 80px;
     height: 100px;
     color: black;
@@ -41,7 +41,7 @@ body{
 }
 
 .box4 {
-    background-color: #fff;
+    background-color: whitesmoke;
     width: 80px;
     height: 100px;
     color: black;
@@ -49,7 +49,7 @@ body{
 }
 
 .box5 {
-    background-color: #fff;
+    background-color: whitesmoke;
     width: 80px;
     height: 100px;
     color: black;
@@ -57,7 +57,7 @@ body{
 }
 
 .box6 {
-    background-color: #fff;
+    background-color: whitesmoke;
     width: 80px;
     height: 100px;
     color: black;
@@ -65,7 +65,7 @@ body{
 }
 
 .box7 {
-    background-color: #fff;
+    background-color: whitesmoke;
     width: 80px;
     height: 100px;
     color: black;
@@ -73,7 +73,7 @@ body{
 }
 
 .box8 {
-    background-color: #fff;
+    background-color: whitesmoke;
     width: 80px;
     height: 100px;
     color: black;
@@ -81,7 +81,7 @@ body{
 }
 
 .box9 {
-    background-color: #fff;
+    background-color: whitesmoke;
     width: 80px;
     height: 100px;
     color: black;
@@ -89,7 +89,7 @@ body{
 }
 
 .box10 {
-    background-color: #fff;
+    background-color: whitesmoke;
     width: 80px;
     height: 100px;
     color: black;
@@ -101,7 +101,7 @@ body{
     width: 50px;
     height: 50px;
     background-color: #3498db;
-    color: #fff;
+    color: whitesmoke;
     font-size: 20px;
     border: none;
     border-radius: 50%;
