@@ -125,11 +125,10 @@ function random(min, max) {
   const num = Math.floor(Math.random() * (max - min + 1)) + min;
   return num;
 }
-
-let VelX = 0;
-let VelY = 0;
-let velX = [5, 8, -4, 2, 7, 2, 10, 15, 6, 12]
-let velY = [5, 8, -4, 2, 7, 2, 10, 15, 6, 12]
+let velX = [Math.floor(Math.random()*((1000-20)+20)), Math.floor(Math.random()*((1000-20)+20)), Math.floor(Math.random()*((1000-20)+20)), Math.floor(Math.random()*((1000-20)+20)), Math.floor(Math.random()*((1000-20)+20)), Math.floor(Math.random()*((1000-20)+20)), Math.floor(Math.random()*((1000-20)+20)), Math.floor(Math.random()*((1000-20)+20)), Math.floor(Math.random()*((1000-20)+20)), Math.floor(Math.random()*((1000-20)+20))]
+let velY = [Math.floor(Math.random()*((1000-20)+20)), Math.floor(Math.random()*((1000-20)+20)), Math.floor(Math.random()*((1000-20)+20)), Math.floor(Math.random()*((1000-20)+20)), Math.floor(Math.random()*((1000-20)+20)), Math.floor(Math.random()*((1000-20)+20)), Math.floor(Math.random()*((1000-20)+20)), Math.floor(Math.random()*((1000-20)+20)), Math.floor(Math.random()*((1000-20)+20)), Math.floor(Math.random()*((1000-20)+20))]
+let changeX = [2, -2, -2, 2, 2, -2, 2, -2, -2, 2]
+let changeY = [-2, 2, -2, 2, -2, -2, -2, 2, 2, -2]
 //convert string to num, add num, and convert back to string
 const inputString = [5, 8, -4, 2, 7, 2, 10, 15, 6, 12];
 const inputNumber = parseInt(inputString);
@@ -137,40 +136,36 @@ const addedNumber = inputNumber + random
 const resultString = addedNumber.toString();
 
 function loop() {
+
     //loop through overlays
-    let circles = docment.querySelectorAll('.ball-overlay-1');
+    let circles = document.querySelectorAll('.ball-overlay-1');
+    let width = screen.width-100;
+    let height = screen.height-200;
     for(let i = 0; i < circles.length; i++) {
-      
-      circles[i].style.left = VelX + 'px';
-      circles[i].style.top = VelY + 'px';
-      VelX += 0.1;
-      VelY += 0.1;
-    }
-    requestAnimationFrame(loop);
+        circles[i].style.left = velX[i] + 'px';
+        circles[i].style.top = velY[i] + 'px';
+        velX[i] += changeX[i];
+        velY[i] += changeY[i];
 
     // this handles the right edge of the screen
-      if ((circles.x + circles.size) >= width) {
-        circles.velX = - (circles.velX);
-    }
-
+        if ((parseInt(circles[i].style.left)) >= width) {
+            changeX[i] = -2;
+        }
     // circles handles the left edge of the screen
-    if ((circles.x - circles.size) <= 0) {
-        circles.velX = - (circles.velX);
-    }
-
+        else if ((parseInt(circles[i].style.left)) <= 10) {
+            changeX[i] = 2;
+        }
     // circles handles the bottom of the screen
-    if ((circles.y + circles.size) >= height) {
-        circles.velY = - (circles.velY);
-    }
-
+        else if (parseInt(circles[i].style.top) >= height) {
+            changeY[i] = -2;
+        }
     // circles handles the top of the screen
-    if ((circles.y - circles.size) <= 0) {
-        circles.velY = - (circles.velY);
-    }
-
-    circles.x += circles.velX;
-    circles.y += circles.velY;
+        else if (parseInt(circles[i].style.top) <= 10) {
+            changeY[i] = 2;
+        }
 }
+requestAnimationFrame(loop);
 
+}
 loop();
 
