@@ -2,6 +2,7 @@ body{
     margin: 0;
     overflow: hidden;
     background-color: seagreen;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #title{
@@ -18,82 +19,112 @@ body{
 
 .box1 {
     background-color: whitesmoke;
-    width: 80px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     color: black;
     text-align: center;
+    font-size: 50px;
+    top: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .box2 {
     background-color: whitesmoke;
-    width: 80px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     color: black;
     text-align: center;
+    font-size: 50px;
+    top: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .box3 {
     background-color: whitesmoke;
-    width: 80px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     color: black;
     text-align: center;
+    font-size: 50px;
+    top: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .box4 {
     background-color: whitesmoke;
-    width: 80px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     color: black;
     text-align: center;
+    font-size: 50px;
+    top: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .box5 {
     background-color: whitesmoke;
-    width: 80px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     color: black;
     text-align: center;
+    font-size: 50px;
+    top: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .box6 {
     background-color: whitesmoke;
-    width: 80px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     color: black;
     text-align: center;
+    font-size: 50px;
+    top: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .box7 {
     background-color: whitesmoke;
-    width: 80px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     color: black;
     text-align: center;
+    font-size: 50px;
+    top: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .box8 {
     background-color: whitesmoke;
-    width: 80px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     color: black;
     text-align: center;
+    font-size: 50px;
+    top: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .box9 {
     background-color: whitesmoke;
-    width: 80px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     color: black;
     text-align: center;
+    font-size: 50px;
+    top: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .box10 {
     background-color: whitesmoke;
-    width: 80px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     color: black;
     text-align: center;
+    font-size: 50px;
+    top: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .ball-overlay-1 {
@@ -101,7 +132,7 @@ body{
     width: 50px;
     height: 50px;
     background-color: #3498db;
-    color: whitesmoke;
+    color: black;
     font-size: 20px;
     border: none;
     border-radius: 50%;
@@ -109,4 +140,21 @@ body{
     z-index: 9000;
     text-align: center;
     vertical-align: middle;
+    line-height: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#clearButton,
+#submitButton {
+    margin-top: 50px;
+    font-size: 30px; /* Set the font size */
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px; /* Add some margin to the container */
 }

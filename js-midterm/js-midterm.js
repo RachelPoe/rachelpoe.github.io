@@ -1,5 +1,3 @@
-//add submit and clear button using innerHTML
-
 const box1 = document.querySelector('.box1');
 const box2 = document.querySelector('.box2');
 const box3 = document.querySelector('.box3');
@@ -122,6 +120,24 @@ overlays.appendChild(ball8);
 overlays.appendChild(ball9);
 
 let boxCount = 1
+
+// Used the help of ChatGPT for the submit and clear buttons
+document.getElementById('clearButton').addEventListener('click', () => {
+  // Clear the boxes
+  for (let i = 1; i <= 10; i++) {
+    document.querySelector(`.box${i}`).innerHTML = '';
+  }
+  boxCount = 1;
+});
+
+document.getElementById('submitButton').addEventListener('click', () => {
+  // Combine the numbers in the boxes and show an alert
+  let finalNumber = '';
+  for (let i = 1; i <= 10; i++) {
+    finalNumber += document.querySelector(`.box${i}`).innerHTML;
+  }
+  alert(`The number you want to submit is: ${finalNumber}`);
+});
 
 function random(min, max) {
   const num = Math.floor(Math.random() * (max - min + 1)) + min;
