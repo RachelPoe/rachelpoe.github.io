@@ -77,19 +77,19 @@ function loop() {
 
     //this handles the right edge of the screen
         if ((parseInt(circles[i].style.left)) >= width) {
-            changeX[i] = -3;
+            changeX[i] = -2.5;
         }
     //circles handles the left edge of the screen
         else if ((parseInt(circles[i].style.left)) <= 10) {
-            changeX[i] = 3;
+            changeX[i] = 2.5;
         }
     //circles handles the bottom of the screen
         else if (parseInt(circles[i].style.top) >= height) {
-            changeY[i] = -3;
+            changeY[i] = -2.5;
         }
     //circles handles the top of the screen
         else if (parseInt(circles[i].style.top) <= 10) {
-            changeY[i] = 3;
+            changeY[i] = 2.5;
         }
 }
 requestAnimationFrame(loop);
