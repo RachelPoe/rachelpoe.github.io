@@ -51,7 +51,7 @@ document.getElementById('submitButton').addEventListener('click', () => {
   for (let i = 1; i <= 10; i++) {
     finalNumber += document.querySelector(`.box${i}`).innerHTML;
   }
-  alert(`The number you want to submit is: ${finalNumber}`);
+  alert(`Your phone number is: ${finalNumber}`);
 });
 
 function random(min, max) {
